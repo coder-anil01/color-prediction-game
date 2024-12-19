@@ -1,0 +1,124 @@
+.game-chart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+.game-chart-button-active,
+.game-chart-button{
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #a5a5a5;
+    color: var(--desible-black);
+    cursor: pointer;
+    font-size: 11px;
+}
+.game-chart-button-active{
+    background: linear-gradient(180deg, #FF962C 0%, #FD5810 100%);
+    color: white !important;
+    font-weight: bold;
+}
+
+.game-history-table,
+.game-history-table-head{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 5px;
+    color: white;
+    background-color: #FF962C;
+    font-weight: bold;
+    font-size: 13px;
+}
+.game-history-table{
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+.game-history-table:nth-child(odd){
+    background-color: white !important;
+}
+.game-history-table:nth-child(even){
+    background-color: #ff962c3a !important;
+}
+.game-history-table > div{
+    width: 12px;
+    height: 12px;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.history-color-violet{
+    background-color: #480AC5;
+}
+.history-color-green{
+    background-color: green;
+}
+.history-color-red{
+    background-color: red;
+}
+
+.game-chart-table-head,
+.game-chart-table{
+    display: grid;
+    grid-template-columns: 5fr 15fr 1fr;
+    padding: 5px;
+    background-color: #FF962C;
+    font-weight: bold;
+    font-size: 13px;
+}
+.game-chart-table-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--desible-black);
+}
+.game-chart-table-number > span{
+    margin-inline: 1px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 9px;
+    width: 12px;
+    height: 12px;
+}
+.game-chart-table:nth-child(odd){
+    background-color: white !important;
+}
+.game-chart-table:nth-child(even){
+    background-color: #ff962c3a !important;
+}
+.game-chart-table-bs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-chart-table-bs-container > span{
+    margin-inline: 1px;
+    border-radius: 50%;
+    font-size: 11px;
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+.game-chart-table-bs-container-Big{
+    background-color: orange;
+}
+.game-chart-table-bs-container-Small{
+    background-color: #00BDFF;
+}
+.game-chart-table-number-violet{
+    background-color: var(--violet);
+    color: white !important;
+    border: 1px solid var(--violet) !important;
+}
+.game-chart-table-number-green{
+    background-color: var(--green);
+    color: white !important;
+    border: 1px solid var(--green) !important;
+}
+.game-chart-table-number-red{
+    background-color: var(--red);
+    color: white;
+    border: 1px solid var(--red) !important;
+}

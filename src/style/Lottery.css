@@ -1,0 +1,166 @@
+.lottery{
+    margin-inline: 10px;
+}
+.lottery-time-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    height: 80px;
+    margin-block: 10px;
+    border-radius: 8px;
+}
+.lottery-time-container-card-active,
+.lottery-time-container-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    color: #6f6f6f;
+}
+.lottery-time-container-card-active{
+    background: linear-gradient(180deg, #febf7f 0%, #ffede5 100%);
+    color: #d77a00;
+    border-radius: 8px;
+    border: 1px solid #d77a00;
+}
+.lottery-time-container-card-header{
+    font-size: 30px;
+}
+.lottery-time-container-card-body{
+    font-size: 11px;
+}
+
+
+/* Time Remaining */
+.lottery-time-remaining{
+    background: linear-gradient(180deg, #ffc251 0%, #ff9100 99%);
+    color: white;
+    height: 100px;
+    margin-block: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.lottery-time-remaining-card{
+    font-size: 12px;
+    font-weight: 600;
+}
+.lottery-time-remaining-card-button{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.lottery-time-remaining-card-number{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.lottery-time-remaining-timer{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 25px;
+}
+.lottery-time-remaining-timer-card{
+    margin-inline: 2px;
+    background-color: #ffc252;
+    border-radius: 3px;
+    line-height: 29px;
+    width: 20px;
+}
+.lottery-time-remaining-timer-colloon{
+    margin-inline: 3px;
+}
+
+/* Preduction */
+.preduction-container{
+    background-color: white;
+    margin-block: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.preduction-container-color{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    color: white;
+    font-size: 14px;
+}
+.preduction-container-color > div{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+.preduction-container-color-card-green{
+    background: linear-gradient(90deg, green, rgba(0, 128, 0, 0.6));
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.preduction-container-color-card-violet{
+    background: linear-gradient(90deg, #480AC5, hsla(260, 90%, 41%, 0.6));
+    border-radius: 10px;
+}
+.preduction-container-color-card-red{
+    background: linear-gradient(90deg, red, rgba(255, 0, 0, 0.6));
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.preduction-container-small-big{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.preduction-container-small-big > div{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    width: 100%;
+}
+.preduction-container-small-big-card-big{
+    background-color: var(--big);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.preduction-container-small-big-card-small{
+    background-color: var(--small);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Circle Grid */
+  .circle-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-block: 20px;
+  }
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+  .circle.green {
+    background-color: green;
+    border: 8px dashed red;
+  }
+  .circle.red {
+    background-color: red;
+    border: 8px dashed green;
+  }
+
+
+  /* preduction-result */
+  .preduction-result{
+    position: sticky;
+    z-index: 100;
+  }

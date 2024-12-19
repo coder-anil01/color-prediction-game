@@ -1,0 +1,35 @@
+.wallet{
+    background: linear-gradient(180deg, #ffc251 0%, #ff9100 99%);
+    color: white;
+    /* height: 100px; */
+    border-radius: 8px;
+    padding: 10px;
+    margin-block: 10px 5px;
+}
+.wallet-current-balance-container{}
+.wallet-current-balance{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wallet-current-balance-text{}
+.wallet-current-balance-refresh{}
+.wallet-button-container{
+    display: flex;
+    justify-content: space-around;
+    margin-block: 10px;
+}
+.wallet-button-container > button{
+    border: none;
+    width: 45%;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wallet-withdraw-button{
+    background-color: var(--red);
+}
+.wallet-reacharge-button{
+    background-color: var(--green);
+}
