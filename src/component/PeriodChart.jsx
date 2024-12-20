@@ -20,13 +20,13 @@ const PeriodChart = () => {
   return (
     <>
     <div className="game-chart">
-      <button className={selectedButton == 1 ? "game-chart-button-active" : "game-chart-button"} onClick={() => setSelectedButton(1)}>Game history</button>
-      <button className={selectedButton == 2 ? "game-chart-button-active" : "game-chart-button"} onClick={() => setSelectedButton(2)}>Chart</button>
-      <button className={selectedButton == 3 ? "game-chart-button-active" : "game-chart-button"} onClick={() => setSelectedButton(3)}>My history</button>
+      <button className={selectedButton === 1 ? "game-chart-button-active" : "game-chart-button"} onClick={() => setSelectedButton(1)}>Game history</button>
+      <button className={selectedButton === 2 ? "game-chart-button-active" : "game-chart-button"} onClick={() => setSelectedButton(2)}>Chart</button>
+      <button className={selectedButton === 3 ? "game-chart-button-active" : "game-chart-button"} onClick={() => setSelectedButton(3)}>My history</button>
     </div>
 
 
-    {selectedButton == 1 &&
+    {selectedButton === 1 &&
     <>
       <div className="game-history-table-head">
         <span>Period</span>
@@ -35,7 +35,7 @@ const PeriodChart = () => {
         <span>Color</span>
       </div>
       {chart.map((index)=>(
-      <div key={index} className='game-history-table'>
+      <div key={index.Period} className='game-history-table'>
         <span>{index.Period}</span>
         <span>{index.Number}</span>
         <span>{index.BigSmall}</span>
@@ -56,19 +56,19 @@ const PeriodChart = () => {
       <div key={index} className='game-chart-table'>
         <span>{index.Period}</span>
         <div className='game-chart-table-number'>
-          <span className={`game-chart-table-number-${ index.Number == 0 && index.color }`}>0</span>
-          <span className={`game-chart-table-number-${ index.Number == 1 && index.color }`}>1</span>
-          <span className={`game-chart-table-number-${ index.Number == 2 && index.color }`}>2</span>
-          <span className={`game-chart-table-number-${ index.Number == 3 && index.color }`}>3</span>
-          <span className={`game-chart-table-number-${ index.Number == 4 && index.color }`}>4</span>
-          <span className={`game-chart-table-number-${ index.Number == 5 && index.color }`}>5</span>
-          <span className={`game-chart-table-number-${ index.Number == 6 && index.color }`}>6</span>
-          <span className={`game-chart-table-number-${ index.Number == 7 && index.color }`}>7</span>
-          <span className={`game-chart-table-number-${ index.Number == 8 && index.color }`}>8</span>
-          <span className={`game-chart-table-number-${ index.Number == 9 && index.color }`}>9</span>
+          <span className={`game-chart-table-number-${ index.Number === 0 && index.color }`}>0</span>
+          <span className={`game-chart-table-number-${ index.Number === 1 && index.color }`}>1</span>
+          <span className={`game-chart-table-number-${ index.Number === 2 && index.color }`}>2</span>
+          <span className={`game-chart-table-number-${ index.Number === 3 && index.color }`}>3</span>
+          <span className={`game-chart-table-number-${ index.Number === 4 && index.color }`}>4</span>
+          <span className={`game-chart-table-number-${ index.Number === 5 && index.color }`}>5</span>
+          <span className={`game-chart-table-number-${ index.Number === 6 && index.color }`}>6</span>
+          <span className={`game-chart-table-number-${ index.Number === 7 && index.color }`}>7</span>
+          <span className={`game-chart-table-number-${ index.Number === 8 && index.color }`}>8</span>
+          <span className={`game-chart-table-number-${ index.Number === 9 && index.color }`}>9</span>
         </div>
         <div className="game-chart-table-bs-container">
-          <span className={`game-chart-table-bs-container-${index.BigSmall}`}>{index.BigSmall == "Big" ? "B" : "S"}</span>
+          <span className={`game-chart-table-bs-container-${index.BigSmall}`}>{index.BigSmall === "Big" ? "B" : "S"}</span>
         </div>
       </div>
       ))}

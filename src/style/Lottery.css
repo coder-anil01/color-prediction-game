@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     color: #6f6f6f;
 }
@@ -24,28 +25,34 @@
     border: 1px solid #d77a00;
 }
 .lottery-time-container-card-header{
-    font-size: 30px;
+    width: 42px;
+    margin-bottom: 5px;
 }
 .lottery-time-container-card-body{
     font-size: 11px;
 }
 
-
 /* Time Remaining */
 .lottery-time-remaining{
-    background: linear-gradient(180deg, #ffc251 0%, #ff9100 99%);
     color: white;
-    height: 100px;
-    margin-block: 10px;
-    border-radius: 8px;
+    margin-block: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    position: relative;
+    overflow: hidden;
+    height: 90px;
+}
+.lottery-time-remaining-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .lottery-time-remaining-card{
     font-size: 12px;
     font-weight: 600;
+    z-index: 10;
+    padding: 10px;
 }
 .lottery-time-remaining-card-button{
     border: 1px solid white;
@@ -77,11 +84,12 @@
 /* Preduction */
 .preduction-container{
     background-color: white;
-    margin-block: 10px;
-    padding: 10px;
     border-radius: 8px;
+    position: relative;
+    overflow: hidden;
 }
 .preduction-container-color{
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
@@ -107,6 +115,8 @@
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
+/* Big Small */
 .preduction-container-small-big{
     display: flex;
     justify-content: space-between;
@@ -114,6 +124,7 @@
     font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
+    padding: 10px;
 }
 .preduction-container-small-big > div{
     display: flex;
@@ -134,33 +145,54 @@
 
 /* Circle Grid */
   .circle-grid {
+    padding-inline: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin-block: 20px;
+    margin-block: 5px;
   }
-  .circle {
+  .circle-grid-card{
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+    align-items: center;
+}
+.circle-grid-card img{
+    width: 100%;
+}
+.circle-grid-card span{
+    position: absolute;
+    margin: auto;
     font-weight: bold;
     font-size: 18px;
-    color: white;
-  }
-  .circle.green {
-    background-color: green;
-    border: 8px dashed red;
-  }
-  .circle.red {
-    background-color: red;
-    border: 8px dashed green;
-  }
-
+}
+.circle-grid-red{
+    color: red;
+}
+.circle-grid-green{
+    color: green;
+}
 
   /* preduction-result */
   .preduction-result{
-    position: sticky;
-    z-index: 100;
+    position: absolute;
+    z-index: 1000;
+    background-color: #000000bc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+.preduction-result-container{
+    font-weight: 900;
+    font-size: 120px;
+    color: white;
+}
+.preduction-result-container > span{
+    margin-inline: 10px;
+    background-color: #ffc252;
+    border-radius: 3px;
+    line-height: 200px;
+    padding-inline: 15px;
+}
