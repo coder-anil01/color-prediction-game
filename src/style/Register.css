@@ -1,0 +1,144 @@
+.register{}
+.register-head{
+    background: var(--color-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    padding: 0 0 10px 15px;
+}
+.register-head > span{
+    font-size: 1.8rem;
+}
+.register-head h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.register-head > div{
+    font-size: 13px;
+}
+.register-phone-email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--desible-black);
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+.register-phone-active,
+.register-phone-desible{
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--desible-black);
+}
+.register-phone-active,
+.register-email-active{
+    color: orange;
+    border-bottom: 2px solid orange !important;
+}
+.register-phone-active > span,
+.register-phone-desible > span{
+    font-size: 25px;
+}
+.register-phone-active > div,
+.register-phone-desible > div{
+    font-size: 14px;
+}
+
+/* Register-Page */
+.register-page{
+    margin-inline: 10px;
+    position: relative;
+    padding-inline: 10px;
+}
+.register-page>div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-block: 20px;
+}
+.register-page span{
+    color: orange !important;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.register-page label{
+    font-size: 16px;
+    display: flex;
+    color: var(--desible-black);
+}
+.register-page input:focus{
+    outline: 1px solid orange;
+}
+.register-page input{
+    color: black;
+    font-size: 15px;
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.register-page-phone{
+    display: flex;
+    width: 95%;
+}
+.register-page-phone >select{
+    margin-right: 10px;
+    color: black;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.register-page-phone > input{
+    width: 100% !important;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row !important;
+    align-items: start;
+    margin-block: 20px;
+
+}
+.checkbox-container > input{
+    width: 15px;
+    height: 15px;
+    background-color: white !important;
+    box-shadow: none;
+    color: aliceblue;
+    background-color: red;
+}
+.checkbox-container label{
+    font-size: 15px;
+}
+.checkbox-container span{
+    color: var(--link) !important;
+    font-size: 15px !important;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.login-button,
+.Register-button{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 80%;
+    margin-block: 15px 35px;
+}
+.Register-button{
+    background-color: orange;
+    color: white;
+    border: none;
+}
+.login-button{
+    background-color: #ffefd2;
+    border: 1px solid orange;
+    color: var(--desible-black);
+}

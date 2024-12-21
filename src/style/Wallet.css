@@ -1,7 +1,6 @@
 .wallet{
     background: linear-gradient(180deg, #ffc251 0%, #ff9100 99%);
     color: white;
-    /* height: 100px; */
     border-radius: 8px;
     padding: 10px;
     margin-block: 10px 5px;
@@ -18,14 +17,15 @@
     justify-content: space-around;
     margin-block: 10px;
 }
-.wallet-button-container > button{
+.wallet-button-container > a{
     border: none;
-    width: 45%;
-    padding: 12px;
+    width: 40%;
+    padding: 10px;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    color: white;
 }
 .wallet-withdraw-button{
     background-color: var(--red);

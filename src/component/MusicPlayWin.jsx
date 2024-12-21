@@ -8,16 +8,16 @@ const MusicPlayWin = ({time}) => {
   const audio2 = new Audio(dip2);
 
     useEffect(() => {
-      if(time <= 5 && time >=1){
-        audio.play().catch((err) => {
-          console.error("Error playing audio:", err);
-        });
-      }
-      if(time == 30 || time == 0){
-        audio2.play().catch((err) => {
-          console.error("Error playing audio:", err);
-        });
-      }
+      // if(time <= 5 && time >=1){
+      //   audio.play().catch((err) => {
+      //     console.error("Error playing audio:", err);
+      //   });
+      // }
+      // if(time == 30 || time == 0){
+      //   audio2.play().catch((err) => {
+      //     console.error("Error playing audio:", err);
+      //   });
+      // }
     }, [time, audio]);
 
   return (
